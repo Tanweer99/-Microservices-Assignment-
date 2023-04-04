@@ -1,8 +1,15 @@
 using Common;
 using MassTransit;
 using ProductService.Service;
+using Steeltoe.Discovery.Client;
+using Steeltoe.Discovery.Eureka;
 
 var builder = WebApplication.CreateBuilder(args);
+
+// Discovery
+builder.Services.AddDiscoveryClient();
+builder.Services.AddHealthChecks();
+builder.Services.AddSingleton<IHealthCheckHandler, ScopedEurekaHealthCheckHandler>();
 
 // Add services to the container.
 builder.Services.AddMassTransit(x =>
@@ -46,5 +53,8 @@ app.UseAuthorization();
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
+
+//discovery
+app.UseHealthChecks("/info");
 
 app.Run();

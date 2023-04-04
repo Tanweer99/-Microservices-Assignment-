@@ -2,7 +2,6 @@
 using MassTransit;
 using ProductService.Controllers;
 using ProductService.Models;
-using System.Collections.Generic;
 using System.Text.Json;
 
 namespace ProductService.Service
@@ -61,16 +60,6 @@ namespace ProductService.Service
             var dataResponse = response.Message.Data;
             var productListResponse = JsonSerializer.Deserialize<List<ProductListModel>>(dataResponse);
 
-            //List<ProductListModel> productList = new List<ProductListModel>();
-            //foreach (var product in productListResponse)
-            //{
-            //    productList.Add(new ProductListModel
-            //    {
-            //        Name = product.Name,
-            //        Description = product.Description,
-            //        StockQuantity = product.StockQuantity,
-            //    });
-            //} 
             return productListResponse;
         }
     }

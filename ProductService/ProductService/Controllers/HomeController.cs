@@ -23,10 +23,10 @@ namespace ProductService.Controllers
             return View(productListResponse);
         }
 
-        [Route("GetProduct")]
-        public ActionResult Get(int productId)
+        [Route("GetProduct/{productId}")]
+        public async Task<ActionResult> Get(int productId)
         {
-            var product = _productService.GetProduct(productId);
+            var product = await _productService.GetProduct(productId);
             if(product == null)
             {
                 return NotFound();

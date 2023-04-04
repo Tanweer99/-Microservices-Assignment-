@@ -31,7 +31,7 @@ namespace ProductDetailService.Service
         {
             var newProductDetail = new ProductDetail
             {
-                ProductId = _productDetails.Count + 1,
+                ProductId = productDetail.ProductId,
                 Size = productDetail.Size,
                 Design = productDetail.Design,
             };

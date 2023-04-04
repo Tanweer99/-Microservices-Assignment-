@@ -1,8 +1,16 @@
 using MassTransit;
 using ProductInventoryService.Consumer;
 using ProductInventoryService.Service;
+using Steeltoe.Discovery.Client;
+using Steeltoe.Discovery.Eureka;
 
 var builder = WebApplication.CreateBuilder(args);
+
+// Discovery
+builder.Services.AddDiscoveryClient();
+builder.Services.AddHealthChecks();
+builder.Services.AddSingleton<IHealthCheckHandler, ScopedEurekaHealthCheckHandler>();
+
 
 // Add services to the container.
 builder.Services.AddMassTransit(x =>
@@ -55,5 +63,8 @@ app.UseHttpsRedirection();
 app.UseAuthorization();
 
 app.MapControllers();
+
+//discovery
+app.UseHealthChecks("/info");
 
 app.Run();

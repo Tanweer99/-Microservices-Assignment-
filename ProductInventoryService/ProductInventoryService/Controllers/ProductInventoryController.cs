@@ -23,7 +23,7 @@ namespace ProductInventoryService.Controllers
         }
 
         // GET api/ProductInventory/5
-        [HttpGet("GetProduct{id}")]
+        [HttpGet("GetProduct/{id}")]
         public ActionResult<ProductDTO> GetProduct(int id)
         {
             // Retrieve the product with the given ID from the in-memory database

@@ -24,7 +24,7 @@ namespace ProductDetailService.Controllers
             _priceServiceClient = priceServiceClient;
         }
 
-        [HttpGet("GetProductDetail")]
+        [HttpGet("GetProductDetail/{productId}")]
         public async Task<ActionResult<ProductDetailDTO>> GetProductDetail(int productId)
         {
             var productDetail = _productService.Get(productId);
@@ -58,13 +58,6 @@ namespace ProductDetailService.Controllers
 
             return ProductDetailToDto(productDetail, priceValue);
         }
-
-        //[HttpGet("GetProductDetails")]
-        //public IEnumerable<ActionResult<ProductDetailDTO>> GetProductDetail()
-        //{
-
-        //    return _productDetails.Select(x => ProductDetailToDto(x)).ToList();
-        //}
 
         [HttpPost("AddProductDetail")]
         public async Task<ActionResult<ProductDetailDTO>> Post([FromBody] ProductDetailDTO productDetailDto)
@@ -107,7 +100,7 @@ namespace ProductDetailService.Controllers
             return RedirectToAction(nameof(GetProductDetail), new { productId = productDetailResult.ProductId });
         }
 
-        [HttpDelete("DeleteProductDetail")]
+        [HttpDelete("DeleteProductDetail/{productId}")]
         public async Task<IActionResult> Delete(int productId)
         {
             var productDetail = _productService.Get(productId);

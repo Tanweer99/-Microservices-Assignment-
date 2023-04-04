@@ -1,7 +1,7 @@
 ﻿using Common;
 using MassTransit;
 using ProductInventoryService.Service;
-using JsonSerializer = System.Text.Json.JsonSerializer;
+using System.Text.Json;
 
 namespace ProductInventoryService.Consumer
 {
