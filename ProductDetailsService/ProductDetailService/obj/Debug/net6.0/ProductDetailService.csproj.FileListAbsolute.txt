@@ -37,3 +37,14 @@ D:\BFT\Microservices & Docker and Kubernetes\Assignment\ProductDetailsService\Pr
 D:\BFT\Microservices & Docker and Kubernetes\Assignment\ProductDetailsService\ProductDetailService\obj\Debug\net6.0\ref\ProductDetailService.dll
 D:\BFT\Microservices & Docker and Kubernetes\Assignment\ProductDetailsService\ProductDetailService\bin\Debug\net6.0\Common.dll
 D:\BFT\Microservices & Docker and Kubernetes\Assignment\ProductDetailsService\ProductDetailService\bin\Debug\net6.0\Common.pdb
+D:\BFT\Microservices & Docker and Kubernetes\Assignment\ProductDetailsService\ProductDetailService\bin\Debug\net6.0\Steeltoe.Common.dll
+D:\BFT\Microservices & Docker and Kubernetes\Assignment\ProductDetailsService\ProductDetailService\bin\Debug\net6.0\Steeltoe.Common.Abstractions.dll
+D:\BFT\Microservices & Docker and Kubernetes\Assignment\ProductDetailsService\ProductDetailService\bin\Debug\net6.0\Steeltoe.Common.Http.dll
+D:\BFT\Microservices & Docker and Kubernetes\Assignment\ProductDetailsService\ProductDetailService\bin\Debug\net6.0\Steeltoe.Connector.Abstractions.dll
+D:\BFT\Microservices & Docker and Kubernetes\Assignment\ProductDetailsService\ProductDetailService\bin\Debug\net6.0\Steeltoe.Connector.ConnectorBase.dll
+D:\BFT\Microservices & Docker and Kubernetes\Assignment\ProductDetailsService\ProductDetailService\bin\Debug\net6.0\Steeltoe.Discovery.Abstractions.dll
+D:\BFT\Microservices & Docker and Kubernetes\Assignment\ProductDetailsService\ProductDetailService\bin\Debug\net6.0\Steeltoe.Discovery.ClientBase.dll
+D:\BFT\Microservices & Docker and Kubernetes\Assignment\ProductDetailsService\ProductDetailService\bin\Debug\net6.0\Steeltoe.Discovery.ClientCore.dll
+D:\BFT\Microservices & Docker and Kubernetes\Assignment\ProductDetailsService\ProductDetailService\bin\Debug\net6.0\Steeltoe.Discovery.Eureka.dll
+D:\BFT\Microservices & Docker and Kubernetes\Assignment\ProductDetailsService\ProductDetailService\bin\Debug\net6.0\Steeltoe.Extensions.Configuration.Abstractions.dll
+D:\BFT\Microservices & Docker and Kubernetes\Assignment\ProductDetailsService\ProductDetailService\bin\Debug\net6.0\System.Reflection.MetadataLoadContext.dll

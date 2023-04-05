@@ -77,3 +77,14 @@ D:\BFT\Microservices & Docker and Kubernetes\Assignment\ProductService\ProductSe
 D:\BFT\Microservices & Docker and Kubernetes\Assignment\ProductService\ProductService\obj\Debug\net6.0\ProductService.genruntimeconfig.cache
 D:\BFT\Microservices & Docker and Kubernetes\Assignment\ProductService\ProductService\obj\Debug\net6.0\ref\ProductService.dll
 D:\BFT\Microservices & Docker and Kubernetes\Assignment\ProductService\ProductService\bin\Debug\net6.0\Newtonsoft.Json.dll
+D:\BFT\Microservices & Docker and Kubernetes\Assignment\ProductService\ProductService\bin\Debug\net6.0\Steeltoe.Common.dll
+D:\BFT\Microservices & Docker and Kubernetes\Assignment\ProductService\ProductService\bin\Debug\net6.0\Steeltoe.Common.Abstractions.dll
+D:\BFT\Microservices & Docker and Kubernetes\Assignment\ProductService\ProductService\bin\Debug\net6.0\Steeltoe.Common.Http.dll
+D:\BFT\Microservices & Docker and Kubernetes\Assignment\ProductService\ProductService\bin\Debug\net6.0\Steeltoe.Connector.Abstractions.dll
+D:\BFT\Microservices & Docker and Kubernetes\Assignment\ProductService\ProductService\bin\Debug\net6.0\Steeltoe.Connector.ConnectorBase.dll
+D:\BFT\Microservices & Docker and Kubernetes\Assignment\ProductService\ProductService\bin\Debug\net6.0\Steeltoe.Discovery.Abstractions.dll
+D:\BFT\Microservices & Docker and Kubernetes\Assignment\ProductService\ProductService\bin\Debug\net6.0\Steeltoe.Discovery.ClientBase.dll
+D:\BFT\Microservices & Docker and Kubernetes\Assignment\ProductService\ProductService\bin\Debug\net6.0\Steeltoe.Discovery.ClientCore.dll
+D:\BFT\Microservices & Docker and Kubernetes\Assignment\ProductService\ProductService\bin\Debug\net6.0\Steeltoe.Discovery.Eureka.dll
+D:\BFT\Microservices & Docker and Kubernetes\Assignment\ProductService\ProductService\bin\Debug\net6.0\Steeltoe.Extensions.Configuration.Abstractions.dll
+D:\BFT\Microservices & Docker and Kubernetes\Assignment\ProductService\ProductService\bin\Debug\net6.0\System.Reflection.MetadataLoadContext.dll

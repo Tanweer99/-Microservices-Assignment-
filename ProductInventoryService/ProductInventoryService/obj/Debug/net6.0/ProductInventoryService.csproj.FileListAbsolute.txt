@@ -37,3 +37,14 @@ D:\BFT\Microservices & Docker and Kubernetes\Assignment\ProductInventoryService\
 D:\BFT\Microservices & Docker and Kubernetes\Assignment\ProductInventoryService\ProductInventoryService\bin\Debug\net6.0\System.Text.Json.dll
 D:\BFT\Microservices & Docker and Kubernetes\Assignment\ProductInventoryService\ProductInventoryService\bin\Debug\net6.0\Common.dll
 D:\BFT\Microservices & Docker and Kubernetes\Assignment\ProductInventoryService\ProductInventoryService\bin\Debug\net6.0\Common.pdb
+D:\BFT\Microservices & Docker and Kubernetes\Assignment\ProductInventoryService\ProductInventoryService\bin\Debug\net6.0\Steeltoe.Common.dll
+D:\BFT\Microservices & Docker and Kubernetes\Assignment\ProductInventoryService\ProductInventoryService\bin\Debug\net6.0\Steeltoe.Common.Abstractions.dll
+D:\BFT\Microservices & Docker and Kubernetes\Assignment\ProductInventoryService\ProductInventoryService\bin\Debug\net6.0\Steeltoe.Common.Http.dll
+D:\BFT\Microservices & Docker and Kubernetes\Assignment\ProductInventoryService\ProductInventoryService\bin\Debug\net6.0\Steeltoe.Connector.Abstractions.dll
+D:\BFT\Microservices & Docker and Kubernetes\Assignment\ProductInventoryService\ProductInventoryService\bin\Debug\net6.0\Steeltoe.Connector.ConnectorBase.dll
+D:\BFT\Microservices & Docker and Kubernetes\Assignment\ProductInventoryService\ProductInventoryService\bin\Debug\net6.0\Steeltoe.Discovery.Abstractions.dll
+D:\BFT\Microservices & Docker and Kubernetes\Assignment\ProductInventoryService\ProductInventoryService\bin\Debug\net6.0\Steeltoe.Discovery.ClientBase.dll
+D:\BFT\Microservices & Docker and Kubernetes\Assignment\ProductInventoryService\ProductInventoryService\bin\Debug\net6.0\Steeltoe.Discovery.ClientCore.dll
+D:\BFT\Microservices & Docker and Kubernetes\Assignment\ProductInventoryService\ProductInventoryService\bin\Debug\net6.0\Steeltoe.Discovery.Eureka.dll
+D:\BFT\Microservices & Docker and Kubernetes\Assignment\ProductInventoryService\ProductInventoryService\bin\Debug\net6.0\Steeltoe.Extensions.Configuration.Abstractions.dll
+D:\BFT\Microservices & Docker and Kubernetes\Assignment\ProductInventoryService\ProductInventoryService\bin\Debug\net6.0\System.Reflection.MetadataLoadContext.dll
