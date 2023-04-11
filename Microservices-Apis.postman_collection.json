@@ -1,0 +1,425 @@
+{
+	"info": {
+		"_postman_id": "028ab1af-0043-4e35-9877-65516917d749",
+		"name": "Microservices-Apis",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Api-Gateway",
+			"item": [
+				{
+					"name": "Inventory",
+					"item": [
+						{
+							"name": "AddProduct",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJSUzI1NiIsImtpZCI6IkFFQUFDQjhGMDU0QjFCRTdCNDIxMkFGQ0QzOUI5MzA0IiwidHlwIjoiYXQrand0In0.eyJpc3MiOiJodHRwczovL2xvY2FsaG9zdDo0NDM1OSIsIm5iZiI6MTY4MTEyNDU1OCwiaWF0IjoxNjgxMTI0NTU4LCJleHAiOjE2ODExMjgxNTgsImF1ZCI6WyJwcmljZVNlcnZpY2UiLCJwcm9kdWN0ZGV0YWlsU2VydmljZSIsInByb2R1Y3RJbnZlbnRvcnlTZXJ2aWNlIiwicHJvZHVjdFNlcnZpY2UiXSwic2NvcGUiOlsiYXBpU2NvcGUiXSwiYW1yIjpbInB3ZCJdLCJjbGllbnRfaWQiOiJzZWNyZXRfdXNlcl9jbGllbnRfaWQiLCJzdWIiOiIyIiwiYXV0aF90aW1lIjoxNjgxMTI0NTU4LCJpZHAiOiJsb2NhbCIsInJvbGVUeXBlIjoiQ2FuVXBkYXRlZGF0YSIsImp0aSI6IjYzRjBDRTcxN0REMDQ1MUU0MEY2RDFBMTVDMzlDN0NGIn0.rGqb4_yfmjqtujNXoYyDGiTcXxl63IrRdnJPptGDmxG1Mminhpi3VDJyyJQCfmTVFgktRcWkS4Oe7Q-kf5GiodwtnQsHYchtacLWGZ43nfcKBSZ0voUYTo9ePBTojw7AnRXT29vExKUYFKmJrAg4aPDCPB3MtSd0ymc9D2Jg9kyyS6ksNDX07q-djadJFaM6x2yzs_zu1lReBTDpPsMEOnFSOFuwGzCJeUqgYlifcM_sycYlWcZEkve_Ri7HvMntMFmOuMq-qJ3H5tSQ14-MPx93IjjSZQxX2HaZe-721jhlQtyQgXyKgrblwWs5YE_be38zpriznUd7LXA-jqNmQg",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"name\": \"sdcsc\",\r\n  \"description\": \"sdcsc\",\r\n  \"stockQuantity\": 43\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:44320/api/ProductInventory/AddProduct",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "44320",
+									"path": [
+										"api",
+										"ProductInventory",
+										"AddProduct"
+									]
+								},
+								"description": "add new products to inventory via gateway"
+							},
+							"response": []
+						},
+						{
+							"name": "Delete Product",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "https://localhost:44320/api/ProductInventory/RemoveProduct/1",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "44320",
+									"path": [
+										"api",
+										"ProductInventory",
+										"RemoveProduct",
+										"1"
+									]
+								},
+								"description": "Remove product from inventory via gateway"
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Product-Detail",
+					"item": [
+						{
+							"name": "Add Product Detail",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"productId\": 6,\r\n  \"size\": \"sdad\",\r\n  \"price\": 34,\r\n  \"design\": \"asa\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:44320/api/ProductDetail/AddProductDetail",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "44320",
+									"path": [
+										"api",
+										"ProductDetail",
+										"AddProductDetail"
+									]
+								},
+								"description": "Add product detail into detail service via gateway"
+							},
+							"response": []
+						},
+						{
+							"name": "Remove product detail",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "https://localhost:44320/api/ProductDetail/DeleteProductDetail/1",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "44320",
+									"path": [
+										"api",
+										"ProductDetail",
+										"DeleteProductDetail",
+										"1"
+									]
+								},
+								"description": "Remove detail from detail-servic via gateway"
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Product",
+					"item": [
+						{
+							"name": "Get product",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://localhost:44320/api/GetProduct/2",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "44320",
+									"path": [
+										"api",
+										"GetProduct",
+										"2"
+									]
+								},
+								"description": "Product service can fetch detail about the product like Name /Description/stock Quanity/size/price/design from another service (like price service or Product detail service or Poduct Inventory service) via api gateway"
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "ProductInventoryService",
+			"item": [
+				{
+					"name": "Add Product",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"string\",\r\n  \"description\": \"string\",\r\n  \"stockQuantity\": 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44344/ProductInventory/AddProduct",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44344",
+							"path": [
+								"ProductInventory",
+								"AddProduct"
+							]
+						},
+						"description": "Add product into inventory"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Product",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44344/ProductInventory/RemoveProduct/5",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44344",
+							"path": [
+								"ProductInventory",
+								"RemoveProduct",
+								"5"
+							]
+						},
+						"description": "Delete product from inventory"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Product",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44344/ProductInventory/GetProduct/1",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44344",
+							"path": [
+								"ProductInventory",
+								"GetProduct",
+								"1"
+							]
+						},
+						"description": "Get single product from inventory"
+					},
+					"response": []
+				},
+				{
+					"name": "Get products",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44344/ProductInventory/GetProduct",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44344",
+							"path": [
+								"ProductInventory",
+								"GetProduct"
+							]
+						},
+						"description": "Get products from inventory"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "ProductDetailService",
+			"item": [
+				{
+					"name": "Get Product Detail",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsImtpZCI6IkFFQUFDQjhGMDU0QjFCRTdCNDIxMkFGQ0QzOUI5MzA0IiwidHlwIjoiYXQrand0In0.eyJpc3MiOiJodHRwczovL2xvY2FsaG9zdDo0NDM1OSIsIm5iZiI6MTY4MTEwNzY0MiwiaWF0IjoxNjgxMTA3NjQyLCJleHAiOjE2ODExMTEyNDIsImF1ZCI6WyJwcmljZVNlcnZpY2UiLCJwcm9kdWN0ZGV0YWlsU2VydmljZSIsInByb2R1Y3RJbnZlbnRvcnlTZXJ2aWNlIiwicHJvZHVjdFNlcnZpY2UiXSwic2NvcGUiOlsiYXBpU2NvcGUiXSwiYW1yIjpbInB3ZCJdLCJjbGllbnRfaWQiOiJzZWNyZXRfdXNlcl9jbGllbnRfaWQiLCJzdWIiOiIyIiwiYXV0aF90aW1lIjoxNjgxMTA3NjQxLCJpZHAiOiJsb2NhbCIsInJvbGVUeXBlIjoiQ2FuVXBkYXRlZGF0YSIsImp0aSI6IjBGODQyODY2MTg0OEQ2RjNFMTFDM0FCRTc3N0FDNzkwIn0.00P2YzWXkJ5r0ZPxv6hAIQVVITI2v977ikVqe-8cJfQz0d91XqL0ze5Wf68p_Z-zH7jYdpm4iIUcwfPD2bVzYGD1D8_sG4kWTmRK6hONFCwG-1YiImhd__NSLGim3eNBYWtiXWqWqJvrLRZJiXvywxMz9Azqs5vw47qG3LUXWfnM1QNi9MWZjbVOG4YakFwn4EegvGp-lXAo1rq7JhJwOtOy2Y058PpUnf_pOPYaEbRO8l0jcMVStb53hnQyKHV6BPvmFLl4TNbhybiLTArzaePV2XheMl2aiB1zSpatF9wcgvZ25fdYZTOv1V_e67fqfcfetNWIGJNgw57zvJZ-aw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44328/ProductDetail/GetProductDetail/2",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44328",
+							"path": [
+								"ProductDetail",
+								"GetProductDetail",
+								"2"
+							]
+						},
+						"description": "Get product detail from detail service"
+					},
+					"response": []
+				},
+				{
+					"name": "Add product detail",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"productId\": 2,\r\n  \"size\": \"string\",\r\n  \"price\": 5,\r\n  \"design\": \"string\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44328/ProductDetail/AddProductDetail",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44328",
+							"path": [
+								"ProductDetail",
+								"AddProductDetail"
+							]
+						},
+						"description": "Add product detail into detail service"
+					},
+					"response": []
+				},
+				{
+					"name": "Remove product detail ",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44328/ProductDetail/DeleteProductDetail/2",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44328",
+							"path": [
+								"ProductDetail",
+								"DeleteProductDetail",
+								"2"
+							]
+						},
+						"description": "Remove product detail from product detail service"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Product Service",
+			"item": [
+				{
+					"name": "Get Product",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsImtpZCI6IkFFQUFDQjhGMDU0QjFCRTdCNDIxMkFGQ0QzOUI5MzA0IiwidHlwIjoiYXQrand0In0.eyJpc3MiOiJodHRwczovL2xvY2FsaG9zdDo0NDM1OSIsIm5iZiI6MTY4MTExMDQ4MywiaWF0IjoxNjgxMTEwNDgzLCJleHAiOjE2ODExMTQwODMsImF1ZCI6WyJwcmljZVNlcnZpY2UiLCJwcm9kdWN0ZGV0YWlsU2VydmljZSIsInByb2R1Y3RJbnZlbnRvcnlTZXJ2aWNlIiwicHJvZHVjdFNlcnZpY2UiXSwic2NvcGUiOlsiYXBpU2NvcGUiXSwiYW1yIjpbInB3ZCJdLCJjbGllbnRfaWQiOiJzZWNyZXRfdXNlcl9jbGllbnRfaWQiLCJzdWIiOiIxIiwiYXV0aF90aW1lIjoxNjgxMTEwNDgzLCJpZHAiOiJsb2NhbCIsInJvbGVUeXBlIjoiQ2FuUmVhZGRhdGEiLCJqdGkiOiJGQjE1QTFCMDYzNEM4MzdBQTdDOThEMDJEMjcxREE5RCJ9.fzScEyzFv_5SfLybOHv7ZumFh1FtIMROme1HCzq4t0en0NuG7MfJX38kquN40_SvAu7dqpymGsr05FC-D0cMAhe4mSYbNsV2O78wxh27JHFmvrCSrbs8OFTQswaJPdfgPNYnwxMMr5tiEnPDQB8VrlBcP233HlAu_jwFs5Cu6ccP4H6YftW6DS9PksQYUzz_vxVo6M9w2ghKL9iN8LBpkTEQfYy_HDj71yxNWIi_FH6uLEoW8LrbUugLgGZAT_v1WvFmzOLwSLtJeZafBZlyZU3Be5UK9dm2qmRbrm5i1NGoEbfwGKyN0J8ka8Z73fJB8qmsmrEJnuWbVsBEbdtelg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44308/GetProduct/2",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44308",
+							"path": [
+								"GetProduct",
+								"2"
+							]
+						},
+						"description": "Product service can fetch detail about the product like Name /Description/stock Quanity/size/price/design from another service (like price service or Product detail service or Poduct Inventory service)"
+					},
+					"response": []
+				},
+				{
+					"name": "Product List",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsImtpZCI6IkFFQUFDQjhGMDU0QjFCRTdCNDIxMkFGQ0QzOUI5MzA0IiwidHlwIjoiYXQrand0In0.eyJpc3MiOiJodHRwczovL2xvY2FsaG9zdDo0NDM1OSIsIm5iZiI6MTY4MTExMDgzMiwiaWF0IjoxNjgxMTEwODMyLCJleHAiOjE2ODExMTQ0MzIsImF1ZCI6WyJwcmljZVNlcnZpY2UiLCJwcm9kdWN0ZGV0YWlsU2VydmljZSIsInByb2R1Y3RJbnZlbnRvcnlTZXJ2aWNlIiwicHJvZHVjdFNlcnZpY2UiXSwic2NvcGUiOlsiYXBpU2NvcGUiXSwiYW1yIjpbInB3ZCJdLCJjbGllbnRfaWQiOiJzZWNyZXRfdXNlcl9jbGllbnRfaWQiLCJzdWIiOiIxIiwiYXV0aF90aW1lIjoxNjgxMTEwODMyLCJpZHAiOiJsb2NhbCIsInJvbGVUeXBlIjoiQ2FuUmVhZGRhdGEiLCJqdGkiOiJDREVEMTM2ODA0RUQ4OTlCOTY0MzVDNDE5MTEzNjNFQSJ9.q7QUFD5D7CvEk52FLNlBNmmUy9jr1p7wVBUZ56J0Nqlp_wF9Jnl3NY2PWoK0XaolHzTph-TqGhUdwVt9Ewgsda37ZtQhAB1mQnSsNiNr5sWpT0bjKEvV7muir9e_AiTO2sBfnD19KGi0IUq7NKx2n_c9FJeTz1Opx88YtzIi_IkEQvT62Hqx1XTxt-EovwJ5mxSYwLUW47lNnmu4-cf3s74QPy-PgXKg8J_Urxw3ivhqJaEC7LaxpsVr5qTdVCbRvCIGpkw0aDXIS_Zz731sMTEa8QHHvPGrzfLHwl0zSsHNuriufVgi5nOaRUsvo6gOZXFUZalb093nxYBzWtIDUw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44308/Home/Index",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44308",
+							"path": [
+								"Home",
+								"Index"
+							]
+						},
+						"description": "Product List"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
